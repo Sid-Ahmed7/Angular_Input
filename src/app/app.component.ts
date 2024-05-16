@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { SkillComponent } from './skill/skill.component';
+import { DeveloperComponent } from './developer/developer.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, DeveloperComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'input-app';
+}
